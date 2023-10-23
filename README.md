@@ -1,6 +1,6 @@
 # Programming Exercise Using PySpark
 
-One Paragraph of project description goes here
+This code joins customers dataset and accounts dataset and removes sensitive data to be able to obtain a joint dataset with bitcoin accounts and their corresponding customer details.
 
 ## Getting Started
 
@@ -14,7 +14,13 @@ For more information on how to install Docker, checkout: [Docker](https://docs.d
 
 ### Installing and Running
 
-Once docker is installed go to your current directory and run
+The input files and the country list be modified on the Dockerfile on this line
+
+```
+CMD ["python", "main.py", "<data1>" ,"<data>","Country1" ,"Country2",....... "CountryN"] 
+```
+
+Once docker is installed and you modify your input parameters go to your current directory and run the ff:
 
 docker build -t <appname> .  
 
@@ -30,3 +36,4 @@ docker build -t <appname> .
 docker build -t my-python-app . 
 ```
 
+Output Files can be found on the client data folder.
