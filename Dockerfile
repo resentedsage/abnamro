@@ -17,6 +17,9 @@ COPY . /abnamro/
 
 WORKDIR /abnamro
 
+RUN mkdir /abnamro/client_data
+
+RUN mkdir /abnamro/logs
 
 RUN pip install -r requirements.txt
 
